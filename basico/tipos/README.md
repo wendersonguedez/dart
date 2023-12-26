@@ -49,7 +49,7 @@ No código acima, estamos acessando o método `toInt()` do objeto do tipo Double
 
 ### Números
 
-<hr>
+---
 
 #### Integer (int)
 
