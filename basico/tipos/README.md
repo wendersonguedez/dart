@@ -1,4 +1,4 @@
-## Tipos
+# Tipos
 
 Dart é uma linguagem dita type safety ou type-safe, onde é necessário informar qual tipo de dado será armazenado em uma posição na memória, podendo ser variável, constante, parâmetro de função ou retorno de função. E uma vez definido esse tipo, a linguagem garante que somente operações permitidas podem ser executadas nesses tipos de dados.
 
@@ -30,7 +30,7 @@ Outra informação importante:
 
 - No erro, é possível notar que está escrito "class bool", o que indica que bool é uma classe, assim como double, int e String. No dart, não temos tipos primitivos como em linguagens como C, Java, C#. Todos os tipos são objetos.
 
-### Tudo é objeto
+## Tudo é objeto
 
 O paradigma orientado a objetos em Dart reflete a filosofia de que "tudo é objeto". Isso significa que mesmo tipos primitivos, como números, são tratados como objetos, oferecendo métodos e propriedades associados a eles.
 
@@ -45,19 +45,19 @@ print(valorInt);
 
 No código acima, estamos acessando o método `toInt()` do objeto do tipo Double, representado pela variável valorDob, onde seu valor (23.4) está sendo convertido para um inteiro e sendo armazenado na variável valorInt.
 
-## Tipos primitivos
+# Tipos primitivos
 
-### Números
+## Números
 
-- Integer (int)
+**Integer (int)**
 
-    São números inteiros, como 1 2 100 234
+São números inteiros, como 1 2 100 234
 
-    ```dart
-    int num = 2535;
-    ```
+```dart
+int num = 2535;
+```
 
-#### Double (double)
+**Double (double)**
 
 São números com ponto flutuante (basicamente números com virgula).
 
@@ -66,7 +66,9 @@ double pi = 3.14;
 double altura = 1.73;
 ```
 
-### Boolean (bool)
+## Booleans
+
+**Boolean (bool)**
 
 São os tipos booleanos, que é basicamente ser falso (false) ou verdadeiro (true).
 
@@ -75,7 +77,7 @@ bool isAdmin = true;
 bool hasPermission = false;
 ```
 
-### String (String)
+## Strings
 
 São sequências de caracteres, um texto ou uma frase. Deve ser declarada entre asplas duplas `""` ou aspas simples `''`.
 
