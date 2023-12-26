@@ -15,7 +15,7 @@ print(valorLogico + valorDecimal);
 
 - Mensagem de erro retornada:
 
-```dart
+```
 Error: The operator '+' isn't defined for the class 'bool'.
 Try correcting the operator to an existing operator, or defining a '+' operator.
     print(valorLogico + valorDecimal);
