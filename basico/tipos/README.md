@@ -47,7 +47,9 @@ No código acima, estamos acessando o método `toInt()` do objeto do tipo Double
 
 ## Tipos primitivos
 
-### Integer (int)
+### Números
+
+#### Integer (int)
 
 São números inteiros, como 1 2 100 234
 
@@ -55,7 +57,7 @@ São números inteiros, como 1 2 100 234
 int num = 2535;
 ```
 
-### Double (double)
+#### Double (double)
 
 São números com ponto flutuante (basicamente números com virgula).
 
