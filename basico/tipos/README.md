@@ -49,15 +49,13 @@ No código acima, estamos acessando o método `toInt()` do objeto do tipo Double
 
 ### Números
 
----
+- Integer (int)
 
-#### Integer (int)
+    São números inteiros, como 1 2 100 234
 
-São números inteiros, como 1 2 100 234
-
-```dart
-int num = 2535;
-```
+    ```dart
+    int num = 2535;
+    ```
 
 #### Double (double)
 
