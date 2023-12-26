@@ -28,6 +28,4 @@ Essa mensagem de erro nos diz algumas coisas, mas a mais importante:
 
 Outra informação importante:
 
-- No erro, é possível notar que está escrito "class bool", o que indica que bool é uma classe, assim como double, int e String.
-
-  > No dart, não temos tipos primitivos como em linguagens como C, Java, C#. Todos os tipos são objetos.
+- No erro, é possível notar que está escrito "class bool", o que indica que bool é uma classe, assim como double, int e String. No dart, não temos tipos primitivos como em linguagens como C, Java, C#. Todos os tipos são objetos.
