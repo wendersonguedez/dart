@@ -43,9 +43,9 @@ int valorInt = valorDob.toInt();
 print(valorInt);
 ```
 
-## Tipos primitivos
-
 No código acima, estamos acessando o método `toInt()` do objeto do tipo Double, representado pela variável valorDob, onde seu valor (23.4) está sendo convertido para um inteiro e sendo armazenado na variável valorInt.
+
+## Tipos primitivos
 
 ### Integer (int)
 
