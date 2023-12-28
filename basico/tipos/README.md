@@ -47,14 +47,17 @@ No código acima, estamos acessando o método `toInt()` do objeto do tipo Double
 
 # Tipos primitivos
 
+Para usar algum valor no dart, é necessário dizer o tipo de dado aquela variável irá guardar. Ou seja, no dart, as variáveis tem tipos, onde os mais comuns são **int**, **double**, **bool**, **String**, **Lists**, **Sets** e **Maps**.
+
 ## Números
 
 **Integer (int)**
 
-São números inteiros, como 1 2 100 234
+Inteiros são números sem vírgula decimal. Alguns exemplos abaixo
 
 ```dart
 int num = 2535;
+int hex = 0xDEADBEEF;
 ```
 
 **Double (double)**
@@ -64,17 +67,22 @@ São números com ponto flutuante (basicamente números com virgula).
 ```dart
 double pi = 3.14;
 double altura = 1.73;
+double exponents = 1.42e5;
 ```
 
-## Booleans
-
-**Boolean (bool)**
-
-São os tipos booleanos, que é basicamente ser falso (false) ou verdadeiro (true).
+Também é possível declarar uma variável como um número, e caso faça isso, ela irá aceitar tantos valores inteiros como decimais.
 
 ```dart
-bool isAdmin = true;
-bool hasPermission = false;
+num x = 10;
+x += 12.25;
+
+print(x); // irá exibir 22.25
+```
+
+Valores inteiros definidos como decimais, são automaticamente convertidos para decimais.
+
+```dart
+double x = 2; // x é equivalente à 2.0
 ```
 
 ## Strings
@@ -114,3 +122,89 @@ String otherPhrase = 'o resultado da soma de $num1 e $num2 é: ${num1 + num2}';
 print(phrase);
 print(otherPhrase);
 ```
+
+## Booleans
+
+**Boolean (bool)**
+
+São os tipos booleanos, que é basicamente ser falso (false) ou verdadeiro (true).
+
+```dart
+bool isAdmin = true;
+bool hasPermission = false;
+```
+
+No dart, não pode usar códigos como **if (nonbooleanValue)** ou **assert (nonbooleanValue)**, é necessário realizar a verificação de valores de forma explicita, como por exemplo:
+
+```dart
+// Verifica se uma string está vazia.
+String fullName = '';
+assert(fullName.isEmpty);
+
+// Verifica se um número é menor ou igual à 0.
+int score = 0;
+assert(score <= 0);
+
+// Verifica se a idade está vazia (é nulo).
+int age = null;
+assert(age == null);
+```
+
+## Lists
+
+Como o próprio nome já diz, **Lists** são basicamente listas, facilmente identificadas como arrays em outras linguagens. No dart, arrays são objetos List, por isso é nomeada dessa forma.
+
+Abaixo está um exemplo de uma lista simples em dart:
+
+```dart
+var usersName = ['wend', 'bruno', 'guilherme'];
+var randomNumbers = [1, 2, 3, 43.2, 23.12];
+var onlyChars = ['a', 'b', 'c'];
+```
+
+Basta colocar todos os seus valores dentro de colchetes e separar por vírgulas.
+
+É importante saber que não é possível misturar tipos de dados diferentes dentro de uma lista. Mesmo não sendo especificado o tipo de dado que as listas acima estão armazenando, o dart foi capaz de identificar de acordo com o conteúdo delas.
+
+A lista `randomNumbers` está armazenando números inteiros e números decimais, e isso só é possível porque o dart converte todos os números inteiros para números decimais. Isso acontece porque é possível com que `1` seja escrito com decimal, ficando `1.0`. Vale lembrar que isso só acontece com números, caso tente com texto, irá retornar erro.
+
+### Explicitar o tipo da lista:
+
+```dart
+List<String> usersName = ['wend', 'bruno', 'gui'];
+List<double> randomNumbers = [1, 2, 3, 43.2, 23.12];
+List<String> onlyChars = ['a', 'b', 'c'];
+```
+
+### Indexação baseada em zero
+
+Assim como em outras linguagens, as listas (ou arrays, melhor dizendo) usam indexação baseada em zero, onde começam a mapear seus valores à partir do índice 0, sendo o primeiro valor da lista.
+
+```dart
+List<int> randomNumbers = [1, 2, 3];
+
+// verificando se o tamanho da lista é igual à 3
+assert(randomNumbers.length == 3);
+
+// verificando se o índice 1 da lista é igual à 2.
+assert(randomNumbers[1] == 2);
+
+// capturando o último valor da lista e armazenando na variável
+int latestValue = randomNumbers.length - 1;
+```
+
+## Sets
+
+Sets é uma coleção de itens exclusivos, ou seja, não é possível armazenar valores iguais e a notação usa chaves `{}` ao invés de colchetes `[]`.
+
+Abaixo está um exemplo de sets simples em dart:
+
+```dart
+var permissions = {'admin', 'user', 'employee', 'ceo'};
+```
+
+Em Sets, acontece a mesma coisa citada acima quando falei sobre Lists, onde não é possível misturar os tipos de dados dentro de um set. Caso isso aconteça, irá gerar um erro em tempo de execução. No exemplo acima, se você tentar adicionar um valor inteiro (1, 2, 84...) ao conjunto de strings, irá gerar um erro. Isso acontece porque o dart entende que `permissions` deve ser um conjunto de strings, logo, não permitirá adição de valores de outros tipos de dados. Essa restrição é uma forma de garantir consistência nos dados armazenados no conjunto.
+
+## Maps
+
+
