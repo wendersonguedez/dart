@@ -205,6 +205,45 @@ var permissions = {'admin', 'user', 'employee', 'ceo'};
 
 Em Sets, acontece a mesma coisa citada acima quando falei sobre Lists, onde não é possível misturar os tipos de dados dentro de um set. Caso isso aconteça, irá gerar um erro em tempo de execução. No exemplo acima, se você tentar adicionar um valor inteiro (1, 2, 84...) ao conjunto de strings, irá gerar um erro. Isso acontece porque o dart entende que `permissions` deve ser um conjunto de strings, logo, não permitirá adição de valores de outros tipos de dados. Essa restrição é uma forma de garantir consistência nos dados armazenados no conjunto.
 
+### Explicitar o tipo do set:
+
+```dart
+// 1º forma:
+var permissions = <String>{'admin', 'user', 'employee', 'ceo'};
+
+// 2º forma:
+Set<String> permissions = {'admin', 'user', 'employee', 'ceo'};
+```
+
 ## Maps
 
+Maps é bem parecido com Lists e Sets, porém seu diferencial é que ele associa chaves e valores. Tanto as chaves quantos os valores podem ser de qualquer tipo de objeto.
 
+Abaixo está um exemplo de maps simples em dart:
+
+```dart
+var person = {
+    'nome': 'wend',
+    'idade': '20',
+    'email': 'wenderson@gmail.com',
+}
+
+var permissions = {
+    0: 'admin',
+    1: 'user',
+    2: 'employer',
+}
+
+// criando os mesmo valores acima, mas utilizando o construtor Map.
+var person = Map<String, String>();
+person['nome'] = 'wend';
+person['idade'] = '20';
+person['email'] = 'wenderson@gmail.com';
+
+var permissions = Map<int, String>();
+permissions[0] = 'admin';
+permissions[1] = 'user';
+permissions[2] = 'employer';
+```
+
+No código acima, é possível notar que ao utilizar o método construtor da classe Map, o 1º argumento informado é o tipo da chave e o 2º argumento informado é o tipo do valor.
