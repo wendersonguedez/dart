@@ -51,5 +51,9 @@ void main() {
   // var usersName = ['wend', 'bruno', 'guilherme'];
   // print(usersName);
 
-  List<int> randomNumbers = [1, 2, 3];
+  // List<int> randomNumbers = [1, 2, 3];
+  // print(randomNumbers);
+
+  // var names = <String>{'wend', 'luara', 'luanna'};
+  // print(names);
 }
