@@ -67,6 +67,17 @@ Com o passar dos anos, a linguagem ganhou destaque como a linguagem de programa�
 
 # Compilação: JIT e AOT
 
+A compilação Just-In-Time (JIT) e a compilação à Frente de Tempo (AOT) são estratégias de compilação utilizadas pelo Dart para otimizar o desempenho do código em diferentes contextos.
+
+## Mas antes de tudo, o que é compilação?
+
+A compilação é o processo de tradução do código-fonte para linguagem de máquina, que por sua vez irá gerar um código executável. Durante esse processo, erros de sintaxe e semântica são identificados e por sua vez reportados.
+
+1. Compilação Just-In-Time (JIT):
+
+   - O Dart utiliza o JIT durante o desenvolvimento da aplicação, enquanto o programador está escrevendo o código-fonte.
+   - Quando ocorre a compilação JIT, o código-fonte Dart é traduzido para código de máquina no momento da execução
+
 # Sintaxe
 
 O Dart possui uma sintaxe com estilo baseado na linguagem C, fazendo com que sua sintaxe seja muito similar à linguagens como Java e C#.
