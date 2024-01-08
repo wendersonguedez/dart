@@ -69,7 +69,7 @@ Com o passar dos anos, a linguagem ganhou destaque como a linguagem de programa�
 
 A compilação Just-In-Time (JIT) e a compilação à Frente de Tempo (AOT) são estratégias de compilação utilizadas pelo Dart para otimizar o desempenho do código em diferentes contextos.
 
-## Mas antes de tudo, o que é compilação?
+### Mas antes de tudo, o que é compilação?
 
 A compilação é o processo de tradução do código-fonte para linguagem de máquina, que por sua vez irá gerar um código executável. Durante esse processo, erros de sintaxe e semântica são identificados e por sua vez reportados.
 
