@@ -7,7 +7,7 @@
 Dart é uma linguagem de programação fortemente tipada, que foi inicialmente criada pela Google, em 2011, com o intuito de substituir o JavaScript para desenvolvimento de scripts em páginas web.
 É uma linguagem que pode ser considerada multi-paradigma, embora apresente fortes estruturas típicas de linguagens orientadas a objetos.
 
-Com o passar dos anos, a linguagem ganhou destaque como a linguagem de programação principal para o desenvolvimento de aplicações usando o Flutter, um framework também criado pela Google, onde é amplamente utilizadoF na construção de aplicações mobile nativas.
+Com o passar dos anos, a linguagem ganhou destaque como a linguagem de programação principal para o desenvolvimento de aplicações usando o Flutter, um framework também criado pela Google, onde é amplamente utilizado na construção de aplicações mobile nativas.
 
 # Principais características
 
