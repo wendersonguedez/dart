@@ -65,18 +65,63 @@ Com o passar dos anos, a linguagem ganhou destaque como a linguagem de programa�
 
    O Dart foi projetado com um foco especial no desempenho. Seu sistema de compilação **just-in-time (JIT)** e **compilação à frente de tempo (AOT)** contribuem para a execução eficiente de código, proporcionando uma experiência de usuário fluida.
 
-# Compilação: JIT e AOT
+# Compilação: O que é compilação? O que seria tempo de compilação e tempo de execução? Qual compilação é adotada pelo Dart?
 
-A compilação Just-In-Time (JIT) e a compilação à Frente de Tempo (AOT) são estratégias de compilação utilizadas pelo Dart para otimizar o desempenho do código em diferentes contextos.
-
-### Mas antes de tudo, o que é compilação?
+### Compilação:
 
 A compilação é o processo de tradução do código-fonte para linguagem de máquina, que por sua vez irá gerar um código executável. Durante esse processo, erros de sintaxe e semântica são identificados e por sua vez reportados.
 
-1. Compilação Just-In-Time (JIT):
+O Dart utiliza duas estratégias de compilação, Just-In-Time (JIT) e Ahead-of-Time (AOT), para otimizar o desempenho do código em diferentes cenários.
 
-   - O Dart utiliza o JIT durante o desenvolvimento da aplicação, enquanto o programador está escrevendo o código-fonte.
-   - Quando ocorre a compilação JIT, o código-fonte Dart é traduzido para código de máquina no momento da execução
+### Tempo de compilação:
+
+O tempo de compilação refere-se à fase de desenvolvimento do software, antes do programa ser executado, ou seja, enquanto está escrevendo o código-fonte. Abaixo, está as etapas do processo de compilação:
+
+1. Compilação:
+
+   - Durante esta etapa, o código-fonte é processado pelo compilador, que realiza a tradução para um formato executável.
+
+2. Verificação de sintaxe e semântica:
+
+   - O compilador verifica a sintaxe e a semântica do código, procurando por erros. Se algum erro for identificado, o compilador relata, permitindo ao programador fazer correções antes da próxima compilação.
+
+3. Resultado Bem-Sucedido:
+
+   - Quando a compilação é bem-sucedida e não há erros, o resultado é um programa executável.
+
+O tempo de compilação é crucial para validar o código-fonte e garantir que esteja livre de erros antes da execução do programa. Essa fase proporciona uma oportunidade de correção, contribuindo para a eficiência e qualidade do software final.
+
+### Tempo de execução:
+
+O tempo de execução é o período em que o código-fonte, após uma compilação bem-sucedida, é realmente executado pelo computador. Durante esse processo, o programa realiza as operações definidas no código para produzir os resultados desejados.
+
+1. Operações:
+
+   - Durante o tempo de execução, o programa realiza calcúlos, manipula dados e responde as entradas do usuários ou eventos externos (consumo de API e afins).
+
+2. Possíveis Erros:
+
+   - Erros que ocorrem durante o tempo de execução podem ser devidos a condições inesperadas, como divisão por zero, falta de memória, entre outros.
+
+3. Recorrência:
+
+   - Ao contrário do tempo de compilação, que ocorre uma vez durante o desenvolvimento, o tempo de execução ocorre sempre que o programa é executado.
+
+### Compilação x Execução no Dart
+
+No ambiente de desenvolvimento Dart, a abordagem de compilação adotada é conhecida como Just-In-Time (JIT). Isso significa que o código Dart é compilado não apenas durante a fase de desenvolvimento, mas também durante a própria execução do programa. Essa abordagem oferece uma série de benefícios que contribuem para a flexibilidade e facilitam o processo de desenvolvimento.
+
+#### Compilação Just-In-Time (JIT):
+
+- Durante o desenvolvimento, enquanto o programador está ativamente escrevendo e ajustando o código-fonte, o Dart utiliza a compilação JIT.
+
+- Isso permite a tradução do código-fonte para código de máquina em tempo real, à medida que o programa está em execução. Essa capacidade de compilar dinamicamente proporciona vantagens como o hot-reloading, permitindo alterações no código-fonte sem a necessidade de reiniciar o programa.
+
+#### Tempo de Compilação x Tempo de Execução:
+
+- O tempo de compilação, que tradicionalmente seria uma fase estática durante o desenvolvimento, é agora intercalado com o tempo de execução, proporcionando uma experiência de desenvolvimento ágil e adaptável.
+
+Essa abordagem específica do Dart contribui para a agilidade no desenvolvimento, permitindo que os desenvolvedores testem e iterem rapidamente sobre seu código, incorporando mudanças quase instantaneamente no programa em execução.
 
 # Sintaxe
 
