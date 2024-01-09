@@ -11,6 +11,18 @@ Com o passar dos anos, a linguagem ganhou destaque como a linguagem de programa�
 
 # Principais características
 
+1. Função `main` é o ponto de entrada:
+
+   ```dart
+   void main() {
+     print('Hello, World!');
+   }
+   ```
+
+   A função `main()` é crucial em qualquer programa Dart, pois é onde começa a execução do programa. Por ser uma função que não irá retornar nada, é definido que seu tipo de retorno é `void` (vazio).
+
+   A função `main()` suporta a funcionalidade de "hot reload", que permite com que seja possível fazer alterações no código durante a execução do programa, tendo essas mudanças refletidas sem a necessidade de reiniciar o programa.
+
 1. Sintaxe limpa e simples:
 
    ```dart
@@ -22,7 +34,7 @@ Com o passar dos anos, a linguagem ganhou destaque como a linguagem de programa�
 
    O Dart apresenta uma sintaxe clara e intuitiva, facilitando a leitura e a escrita de código, contribuindo para uma curva de aprendizado suave, tornando a linguagem acessível para desenvolvedores iniciantes, quanto experientes.
 
-2. Tipagem Opcional:
+1. Tipagem Opcional:
 
    ```dart
     void main() {
@@ -36,7 +48,7 @@ Com o passar dos anos, a linguagem ganhou destaque como a linguagem de programa�
 
    O Dart oferece a flexibilidade de tipagem opcional, permitindo que os desenvolvedores escolham entre tipagem estática e dinâmica. Essa abordagem proporciona maior segurança em tempo de compilação, sem sacrificar a agilidade durante o desenvolvimento.
 
-3. Ecossistema Flutter:
+1. Ecossistema Flutter:
 
    ```dart
    // Exemplo de Dart usando o Flutter para criar um aplicativo
@@ -61,7 +73,7 @@ Com o passar dos anos, a linguagem ganhou destaque como a linguagem de programa�
 
    O Dart é a linguagem oficial para o desenvolvimento com o Flutter, um framework UI de código aberto para a criação de aplicativos móveis multiplataforma. A combinação de Dart e Flutter permite a construção eficiente de aplicativos atraentes e responsivos para iOS, Android e Web.
 
-4. Desempenho otimizado:
+1. Desempenho otimizado:
 
    O Dart foi projetado com um foco especial no desempenho. Seu sistema de compilação **just-in-time (JIT)** e **compilação à frente de tempo (AOT)** contribuem para a execução eficiente de código, proporcionando uma experiência de usuário fluida.
 
