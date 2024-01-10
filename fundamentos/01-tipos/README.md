@@ -43,7 +43,11 @@ int valorInt = valorDob.toInt();
 print(valorInt);
 ```
 
-- No código acima, estamos acessando o método `toInt()` do objeto do tipo Double, representado pela variável valorDob, onde seu valor (23.4) está sendo convertido para um inteiro e sendo armazenado na variável valorInt.
+- No código acima, ao declarar a variável `valorDob` como tipo `double` e inicializar a mesma com valor `23.4`, ela se torna um objeto do tipo `double`.
+
+- Seguindo adiante, ao fazer `valorDob.toInt()`, a variável que era do tipo `double`, passa a ser do tipo `int`, pois está convertendo o valor da variável `valorDob` em um inteiro e armazenando na variável `valorInt`.
+
+- Por fim, ambas as variáveis se tornam um objeto, tendo métodos disponíveis para serem utilizados.
 
 # Tipos primitivos
 
@@ -73,13 +77,14 @@ double exponents = 1.42e5;
 Também é possível declarar uma variável como um número, e caso faça isso, ela irá aceitar tantos valores inteiros como decimais.
 
 ```dart
+// declarando x como um número.
 num x = 10;
 x += 12.25;
 
 print(x); // irá exibir 22.25
 ```
 
-Valores inteiros definidos como decimais, são automaticamente convertidos para decimais.
+Valores inteiros armazenados em variáveis definidas como `double`, são automaticamente convertidos para decimais.
 
 ```dart
 double x = 2; // x é equivalente à 2.0
@@ -136,19 +141,43 @@ bool hasPermission = false;
 
 No dart, não pode usar códigos como **if (nonbooleanValue)** ou **assert (nonbooleanValue)**, é necessário realizar a verificação de valores de forma explicita, como por exemplo:
 
-```dart
-// Verifica se uma string está vazia.
-String fullName = '';
-assert(fullName.isEmpty);
+- Em casos de valores não booleanos:
 
-// Verifica se um número é menor ou igual à 0.
-int score = 0;
-assert(score <= 0);
+  ```dart
+  // Verifica se uma string está vazia.
+  String fullName = '';
+  assert(fullName.isEmpty);
 
-// Verifica se a idade está vazia (é nulo).
-int age = null;
-assert(age == null);
-```
+  // Verifica se um número é menor ou igual à 0.
+  int score = 0;
+  assert(score <= 0);
+
+  // Verifica se a idade está vazia (é nulo).
+  int age = null;
+  assert(age == null);
+
+  // Isso não é permitido, pois a expressão entre parênteses não é booleana.
+  if (idade) {
+    // Código inválido.
+  }
+  ```
+
+- Em casos de valores booleanos:
+
+  ```dart
+  int idade = 25;
+
+  if (idade > 18) {
+    print('A pessoa é maior de idade.');
+  }
+
+  // Exemplo com chamada de método que retorna um valor booleano:
+  String nome = 'João';
+
+  if (nome.isNotEmpty) {
+    print('O nome não está vazio.');
+  }
+  ```
 
 ## Lists
 
