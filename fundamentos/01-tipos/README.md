@@ -1,6 +1,6 @@
 # Tipos
 
-Dart é uma linguagem dita type safety ou type-safe, onde é necessário informar qual tipo de dado será armazenado em uma posição na memória, podendo ser variável, constante, parâmetro de função ou retorno de função. E uma vez definido esse tipo, a linguagem garante que somente operações permitidas podem ser executadas nesses tipos de dados.
+Dart é uma linguagem dita type safety ou type-safe, onde é necessário informar qual tipo de dado será armazenado em uma posição na memória, podendo ser variável, constante, parâmetro de função ou retorno de função. E uma vez definido esse tipo, a linguagem garante que somente operações permitidas podem ser executadas nesses tipos de dados. Com isso, Dart é considerada uma linguagem fortemente tipada.
 
 Vamos a um exemplo:
 
@@ -28,7 +28,7 @@ Essa mensagem de erro nos diz algumas coisas, mas a mais importante:
 
 Outra informação importante:
 
-- No erro, é possível notar que está escrito "class bool", o que indica que bool é uma classe, assim como double, int e String. No dart, não temos tipos primitivos como em linguagens como C, Java, C#. Todos os tipos são objetos.
+- No erro, é possível notar que está escrito "class bool", o que indica que bool é uma classe, assim como double, int e String. No dart, não temos tipos primitivos como em linguagens como C, Java, C#. **Todos os tipos são objetos**.
 
 ## Tudo é objeto
 
@@ -43,7 +43,7 @@ int valorInt = valorDob.toInt();
 print(valorInt);
 ```
 
-No código acima, estamos acessando o método `toInt()` do objeto do tipo Double, representado pela variável valorDob, onde seu valor (23.4) está sendo convertido para um inteiro e sendo armazenado na variável valorInt.
+- No código acima, estamos acessando o método `toInt()` do objeto do tipo Double, representado pela variável valorDob, onde seu valor (23.4) está sendo convertido para um inteiro e sendo armazenado na variável valorInt.
 
 # Tipos primitivos
 
